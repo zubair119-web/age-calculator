@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 25px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1rem;
+}
+
+.calculator-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+    margin-bottom: 25px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s;
+}
+
+.input-section input:focus {
+    outline: none;
+    border-color: #2575fc;
+}
+
+.btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 12px;
+}
+
+.btn:hover, .btn:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+}
+
+.btn.secondary {
+    background: linear-gradient(to right, #4CAF50, #45a049);
+}
+
+.result-section {
+    text-align: center;
+    padding: 25px 0;
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+    margin: 25px 0;
+}
+
+.age-display {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.age-box {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white;
+    padding: 20px 15px;
+    border-radius: 15px;
+    min-width: 90px;
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+}
+
+.age-box span {
+    font-size: 2.8rem;
+    font-weight: bold;
+    display: block;
+    line-height: 1;
+}
+
+.age-box small {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+#totalDisplay {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#totalDisplay p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.extra-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f7ff;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.extra-info p {
+    margin: 10px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.share-section {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.share-btn {
+    background: linear-gradient(to right, #FF416C, #FF4B2B);
+}
+
+.share-hint {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.instructions {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .age-box {
+        min-width: 70px;
+        padding: 15px 10px;
+    }
+    
+    .age-box span {
+        font-size: 2.2rem;
+    }
+    
+    .header h1 {
+        font-size: 1.8rem;
+    }
+}

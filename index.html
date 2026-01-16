@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📱 Age Calculator</h1>
+            <p class="subtitle">Calculate your exact age instantly</p>
+        </div>
+        
+        <div class="calculator-card">
+            <div class="input-section">
+                <label for="birthDate">Your Birth Date:</label>
+                <input type="date" id="birthDate" max="">
+                
+                <label for="calculateAt">Calculate Age At:</label>
+                <input type="date" id="calculateAt" max="">
+                
+                <button id="calculateBtn" class="btn">Calculate Age</button>
+                <button id="todayBtn" class="btn secondary">Use Today's Date</button>
+            </div>
+            
+            <div class="result-section">
+                <h2>Your Age:</h2>
+                <div id="ageResult" class="age-display">
+                    <div class="age-box">
+                        <span id="years">0</span>
+                        <small>Years</small>
+                    </div>
+                    <div class="age-box">
+                        <span id="months">0</span>
+                        <small>Months</small>
+                    </div>
+                    <div class="age-box">
+                        <span id="days">0</span>
+                        <small>Days</small>
+                    </div>
+                </div>
+                
+                <div id="totalDisplay">
+                    <p>Total: <span id="totalDays">0</span> days</p>
+                    <p>or <span id="totalMonths">0</span> months</p>
+                </div>
+                
+                <div class="extra-info">
+                    <p id="nextBirthday">Next birthday in: -- days</p>
+                    <p id="zodiacSign">Zodiac: --</p>
+                    <p id="birthDay">Born on: --</p>
+                </div>
+            </div>
+            
+            <div class="share-section">
+                <button id="shareBtn" class="btn share-btn">📲 Share This App</button>
+                <p class="share-hint">Send to friends to calculate their age!</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Made with ❤️ | Works on all mobile devices</p>
+            <p class="instructions">
+                <strong>How to use:</strong><br>
+                1. Select your birth date<br>
+                2. Select target date (or use today)<br>
+                3. Tap "Calculate Age"<br>
+                4. Share with friends!
+            </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
